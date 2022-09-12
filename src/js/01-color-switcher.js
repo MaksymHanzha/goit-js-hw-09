@@ -7,7 +7,6 @@ btnStart.addEventListener('click', onBtnStart);
 btnStop.addEventListener('click', onBtnStop);
 
 function onBtnStart() {
-  //   console.log('start');
   intervalId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
@@ -15,7 +14,6 @@ function onBtnStart() {
 }
 
 function onBtnStop() {
-  //   console.log('stop');
   clearInterval(intervalId);
   btnStart.disabled = false;
 }
